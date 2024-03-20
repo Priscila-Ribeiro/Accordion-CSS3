@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'MontSerrat', sans-serif;
+  color: #404040;
+}
+
+.itens-paginacao {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 6rem;
+  font-size: 1.4rem;
+
+  .paginacao-botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    color: white;
+    border: 0;
+    border-radius: 50%;
+    padding: 0.45rem;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .paginacao-link {
+    display: flex;
+    color: inherit;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+      background-color: green;
+      color: white;
+      font-weight: 700;
+      border-radius: 50%;
+      padding: 0.45rem;
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  .paginacao-link.link-ativo,
+  .paginacao-botao {
+    width: 2rem;
+    height: 2rem;
+    text-decoration: none;
+    background-color: green;
+    color: white;
+    font-weight: 700;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0.45rem;
+  }
+}
